@@ -9,6 +9,57 @@
 .Contact:not(:first-child) {
   margin-top: 24px;
 }
+p.name {
+  font-weight: bold;
+}
+.left p {
+  padding: 0;
+  margin: 0;
+}
+.Contact .left {
+  float: left;
+  width: 30%;
+  font-size: 12px;
+  text-align: center;
+}
+.Contact .right {
+  clear: both;
+  display: block;
+  padding-left: 6px;
+}
 .Contact .right h2 {
-  font-size: 1rem;
+  font-size: 20px;
+}
+.Contact .right p {
+  font-size: 15px;
+}
+.time {
+  position: absolute;
+  bottom: 0;
+  right: 16px;
+  font-size: 15px;
+}
+.chat_id {
+  position: absolute;
+  border-radius: 0px 12px 0px 5px;
+  background-color: #efebeb;
+  top: 0;
+  right: 0;
+  text-align: center;
+  color: #6b6565;
+  font-size: 10px;
+  padding-right: 2px;
+}
+.unread {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 1000px;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  font-size: 12px;
+  background-color: #279f2c;
+  color: #fff;
+  transform: translate(50%, 50%);
 }

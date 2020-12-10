@@ -26,6 +26,12 @@
 .driver {
   color: orange;
 }
+/* .Menu {
+  text-align: center;
+} */
+.Menu span {
+  display: inline-block;
+}
 .right {
   display: flex;
   align-items: center;

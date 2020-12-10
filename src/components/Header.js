@@ -12,16 +12,18 @@ export default function Header() {
         <div className="right">
           <ul className="links">
             <li>
-              <a href="#">Jobs</a>
+              <a href="#jobs">Jobs</a>
             </li>
             <li>
-              <a href="#">Get Social</a>
+              <a href="#social">Get Social</a>
             </li>
             <li className="active">
-              <a href="#">James Keem</a>
+              <a href="#james">James Keem</a>
             </li>
           </ul>
-          <div className="Menu">Menu -</div>
+          <div className="Menu">
+            Menu <span class="material-icons">menu</span>
+          </div>
         </div>
       </div>
       <div className="bottom"></div>
