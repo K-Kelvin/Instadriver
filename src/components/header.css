@@ -1,0 +1,55 @@
+.Header {
+  background-color: white;
+  color: black;
+  width: 100%;
+}
+.Header .top {
+  width: 100%;
+  padding: 8px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Header .bottom {
+  background-color: #3b3b3b;
+  height: 28px;
+  width: 100%;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.logo img {
+  margin-right: 10px;
+}
+.driver {
+  color: orange;
+}
+.right {
+  display: flex;
+  align-items: center;
+}
+ul.links {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.links li {
+  list-style: none;
+  margin-right: 36px;
+}
+.links li a {
+  text-align: center;
+  padding: 10px 54px;
+  border: 2px solid rgba(59, 59, 59, 0.49);
+  text-decoration: none;
+  font-weight: bold;
+  color: #3b3b3b;
+}
+.links li a:hover,
+.links li.active a {
+  background-color: #3b3b3b;
+  color: #fff;
+}
