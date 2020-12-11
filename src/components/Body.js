@@ -17,36 +17,53 @@ export default function Body() {
       <div id="left-section" className="left-navbar">
         <ul>
           <li>
-            <i className="far fa-user"></i>
-            <a href="#emp">Employer Profile</a>
+            <a href="#emp">
+              <i className="far fa-user"></i>
+              Employer Profile
+            </a>
           </li>
           <li>
-            <i className="fas fa-car"></i>
-            <a href="#veh">Onboard Your Vehicles</a>
+            <a href="#veh">
+              <i className="fas fa-car"></i>
+              Onboard Your Vehicles
+            </a>
           </li>
           <li>
-            <i className="fas fa-search"></i>
-            <a href="#sch">Search &amp; Hire Drivers</a>
+            <a href="#sch">
+              <i className="fas fa-search"></i>
+              Search &amp; Hire Drivers
+            </a>
           </li>
           <li className="active">
-            <i className="far fa-envelope"></i>
-            <a href="#inb">Inbox</a>
+            <a href="#inb">
+              <i className="far fa-envelope"></i>
+              Inbox
+              <span id="highlight"></span>
+            </a>
           </li>
           <li>
-            <i className="fas fa-briefcase"></i>
-            <a href="#rec">Recruitment</a>
+            <a href="#rec">
+              <i className="fas fa-briefcase"></i>
+              Recruitment
+            </a>
           </li>
           <li>
-            <i className="fas fa-sitemap"></i>
-            <a href="#org">My Organisations</a>
+            <a href="#org">
+              <i className="fas fa-sitemap"></i>
+              My Organisations
+            </a>
           </li>
           <li>
-            <i className="fas fa-star-half-alt"></i>
-            <a href="#rate">Rate A Driver</a>
+            <a href="#rate">
+              <i className="fas fa-star-half-alt"></i>
+              Rate A Driver
+            </a>
           </li>
           <li>
-            <i className="far fa-credit-card"></i>
-            <a href="#sub">My Subscription</a>
+            <a href="#sub">
+              <i className="far fa-credit-card"></i>
+              My Subscription
+            </a>
           </li>
         </ul>
       </div>
@@ -99,10 +116,13 @@ export default function Body() {
             <div id="chat_id" className="chat_id">
               Chat ID: 3362Gd2
             </div>
-            <Message message={msg1} read="true" />
-            <Message sent message={msg2} />
+            <Message message={msg1} />
+            <Message sent message={msg2} read={true} />
             <Message message={msg3} />
-            <Message sent message={msg1} />
+            <Message message={msg1} />
+            <Message message={msg2} />
+            <Message sent message={msg2} />
+            <Message message={msg2} />
             <Message message={msg2} />
           </div>
           <div className="chat_footer">
@@ -115,7 +135,9 @@ export default function Body() {
                 <span className="material-icons">attachment</span>
                 <span className="material-icons">sentiment_satisfied_alt</span>
                 <span className="material-icons">mic</span>
-                <span className="material-icons">send</span>
+                <span className="material-icons" id="btn-send">
+                  send
+                </span>
               </div>
             </div>
           </div>

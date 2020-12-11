@@ -17,8 +17,8 @@ export default function Message({
     style.float = "right";
     style.borderRadius = "15px 15px 0px 15px";
   }
-  if (read) {
-    style.tick_color = "#FFBB00";
+  if (read == true) {
+    style.tick_color = "#ffbb00";
   }
   var ticks = (
     <span className="material-icons ticks" style={{ color: style.tick_color }}>

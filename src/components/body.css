@@ -4,36 +4,51 @@
 }
 /* left section */
 .left-navbar {
-  width: 16%;
+  width: 17%;
   background-color: #914a9c;
   color: #fff;
   height: max-content;
 }
 .left-navbar ul {
-  padding: 20px 12px;
+  padding: 20px 0 20px 12px;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
 }
 .left-navbar ul li {
   list-style: none;
   border-radius: 8px;
-  font-size: 1.01rem;
-  padding: 4px 8px;
+  font-size: 1rem;
 }
 .left-navbar ul li i {
   margin-right: 8px;
 }
 .left-navbar ul li:not(:last-child) {
-  margin-bottom: 15px;
-}
-.left-navbar ul li.active {
-  background-color: white;
+  margin-bottom: 16px;
 }
 .left-navbar ul li a {
   text-decoration: none;
   color: white;
+  padding: 8px 8px;
+  width: 100%;
+  border-radius: 5px;
 }
-.left-navbar ul li.active a,
-.left-navbar ul li.active i {
+.left-navbar ul li.active a {
+  background-color: white;
   color: black;
+}
+.left-navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+#highlight {
+  display: inline-block;
+  background-color: #ffbb00;
+  width: 16px;
+  height: 16px;
+  border-radius: 1000px;
+  margin-left: 8px;
 }
 
 /* middle scrollable section */
@@ -92,7 +107,7 @@
 /* right scrollable section*/
 .chat {
   position: relative;
-  width: 52%;
+  width: 51%;
   min-height: 500px;
 }
 .chat button {
@@ -145,8 +160,6 @@
   border-radius: 0px 0px 0px 5px;
 }
 .chat_footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 .type_message {
@@ -169,6 +182,12 @@
   height: 40px;
   background-color: #f9f8f8;
   border-radius: 0 0 8px 8px;
+}
+#btn-send {
+  background-color: #ffbb00;
+  padding: 6px 25px;
+  border-radius: 15px;
+  color: white;
 }
 p.name {
   font-weight: bold;
