@@ -205,3 +205,7 @@ p {
   position: absolute;
   right: 5px;
 }
+#filter {
+  outline: none;
+  border: none;
+}

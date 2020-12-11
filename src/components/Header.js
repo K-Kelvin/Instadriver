@@ -22,7 +22,7 @@ export default function Header() {
             </li>
           </ul>
           <div className="Menu">
-            Menu <span class="material-icons">menu</span>
+            Menu <i className="fas fa-bars"></i>
           </div>
         </div>
       </div>

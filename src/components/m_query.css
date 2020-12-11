@@ -1,4 +1,4 @@
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .Body {
     display: block;
   }
@@ -17,4 +17,6 @@
   #middle-section {
     margin: 0;
   }
+}
+@media (max-width: 768px) {
 }

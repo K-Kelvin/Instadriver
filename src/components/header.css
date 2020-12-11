@@ -59,3 +59,22 @@ ul.links {
   background-color: #3b3b3b;
   color: #fff;
 }
+.hide {
+  display: none;
+}
+@media (max-width: 768px) {
+  .Header .top {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  ul.links {
+    display: block;
+  }
+  ul.links li a {
+    padding: 0;
+    margin: 0;
+  }
+  ul.links li {
+    margin-bottom: 4px;
+  }
+}

@@ -57,7 +57,9 @@ export default function Body() {
             <input type="text" className="search_bar" placeholder="Search..." />
             <i className="fas fa-search search_icon"></i>
           </div>
-          <i className="fas fa-filter"></i>
+          <button onClick={toggleMenu} id="filter">
+            <i className="fas fa-filter"></i>
+          </button>
         </div>
 
         <div className="conversations">
@@ -121,4 +123,7 @@ export default function Body() {
       </div>
     </div>
   );
+}
+function toggleMenu() {
+  console.log("clicked");
 }
