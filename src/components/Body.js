@@ -1,3 +1,4 @@
+import "./m_query.css";
 import "./body.css";
 import Contact from "./Contact";
 import Message from "./Message";
@@ -6,52 +7,59 @@ import pic2 from "../images/pic2.png";
 import pic3 from "../images/pic3.png";
 
 export default function Body() {
+  var msg1 =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
+  var msg2 =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+  var msg3 = "Lorem ipsum dolor";
   return (
     <div className="Body">
-      <div className="left-navbar">
+      <div id="left-section" className="left-navbar">
         <ul>
           <li>
-            <span class="material-icons">person_outline</span>
+            <i className="far fa-user"></i>
             <a href="#emp">Employer Profile</a>
           </li>
           <li>
-            <span class="material-icons">drive_eta</span>
+            <i className="fas fa-car"></i>
             <a href="#veh">Onboard Your Vehicles</a>
           </li>
           <li>
-            <span class="material-icons">search</span>
+            <i className="fas fa-search"></i>
             <a href="#sch">Search &amp; Hire Drivers</a>
           </li>
           <li className="active">
-            <span class="material-icons">mail</span>
+            <i className="far fa-envelope"></i>
             <a href="#inb">Inbox</a>
           </li>
           <li>
-            <span class="material-icons">business_center</span>
+            <i className="fas fa-briefcase"></i>
             <a href="#rec">Recruitment</a>
           </li>
           <li>
-            <span class="material-icons">account_tree</span>
+            <i className="fas fa-sitemap"></i>
             <a href="#org">My Organisations</a>
           </li>
           <li>
-            <span class="material-icons">stars</span>
+            <i className="fas fa-star-half-alt"></i>
             <a href="#rate">Rate A Driver</a>
           </li>
           <li>
-            <span class="material-icons">payment</span>
+            <i className="far fa-credit-card"></i>
             <a href="#sub">My Subscription</a>
           </li>
         </ul>
       </div>
 
-      <div className="contacts">
-        <div className="search">
-          <input type="text" className="search_bar" placeholder="Search.." />
-          <p style={{ display: "block" }}>
-            <span className="material-icons">filter_list</span>
-          </p>
+      <div id="middle-section" className="contacts">
+        <div className="search_div">
+          <div className="search">
+            <input type="text" className="search_bar" placeholder="Search..." />
+            <i className="fas fa-search search_icon"></i>
+          </div>
+          <i className="fas fa-filter"></i>
         </div>
+
         <div className="conversations">
           <Contact image={pic1} unread="4" />
           <Contact image={pic2} unread="0" />
@@ -63,12 +71,9 @@ export default function Body() {
         </div>
       </div>
 
-      <div className="chat">
+      <div id="right-section" className="chat">
         <button>
-          <span class="material-icons" style={{ fontSize: "1rem" }}>
-            add
-          </span>{" "}
-          Start a new chat
+          <i className="fas fa-plus"></i> &nbsp; Start a new chat
         </button>
         <div className="messages">
           <img src={pic1} className="profile_image" alt="..." />
@@ -81,17 +86,24 @@ export default function Body() {
               Inquiry about relocation from Nairobi{" "}
             </div>
             <div className="contact_info">
-              <span className="material-icons">info</span>
+              <i className="fas fa-info"></i>
               Contact Info
             </div>
             <div>
               <span className="material-icons">more_vert</span>
             </div>
           </header>
-          <div className="body">
-            <Message />
+          <div className="chat_body">
+            <div id="chat_id" className="chat_id">
+              Chat ID: 3362Gd2
+            </div>
+            <Message message={msg1} read="true" />
+            <Message sent message={msg2} />
+            <Message message={msg3} />
+            <Message sent message={msg1} />
+            <Message message={msg2} />
           </div>
-          <div className="footer">
+          <div className="chat_footer">
             <div className="type_message">
               <textarea
                 placeholder="Type your message"
