@@ -71,8 +71,22 @@ export default function Body() {
           Start a new chat
         </button>
         <div className="messages">
+          <img src={pic1} className="profile_image" alt="..." />
           <header className="chat_header">
-            <img src={pic1} alt="..." />
+            <div className="details">
+              <p className="name">Shirly Cook</p>
+              <p>@JohntheD</p>
+            </div>
+            <div style={{ fontWeight: "bold" }}>
+              Inquiry about relocation from Nairobi{" "}
+            </div>
+            <div className="contact_info">
+              <span className="material-icons">info</span>
+              Contact Info
+            </div>
+            <div>
+              <span className="material-icons">more_vert</span>
+            </div>
           </header>
           <div className="body">
             <Message />
@@ -83,7 +97,12 @@ export default function Body() {
                 placeholder="Type your message"
                 style={{ resize: "none" }}
               />
-              <div className="footer">Icon Icon Icon Send</div>
+              <div className="footer">
+                <span className="material-icons">attachment</span>
+                <span className="material-icons">sentiment_satisfied_alt</span>
+                <span className="material-icons">mic</span>
+                <span className="material-icons">send</span>
+              </div>
             </div>
           </div>
         </div>

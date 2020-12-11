@@ -73,6 +73,19 @@
   width: 52%;
   min-height: 500px;
 }
+.chat_header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile_image {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  z-index: 2;
+  transform: translateY(-52%);
+}
 .chat button {
   border-radius: 8px;
   padding: 6px 8px;
@@ -121,6 +134,36 @@
 }
 .type_message .footer {
   height: 40px;
-  background-color: #c4c4c4;
+  background-color: #f9f8f8;
   border-radius: 0 0 8px 8px;
+}
+p.name {
+  font-weight: bold;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+.details {
+  margin-top: 18px;
+  font-size: 12px;
+}
+.contact_info {
+  background-color: #6b6565;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 4px;
+}
+.footer span:first-child {
+  margin-left: 5px;
+}
+.footer span {
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer span:last-child {
+  position: absolute;
+  right: 5px;
 }
