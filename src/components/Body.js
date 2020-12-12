@@ -1,10 +1,12 @@
-import "./m_query.css";
-import "./body.css";
+import Dropleft from "./Dropleft";
 import Contact from "./Contact";
 import Message from "./Message";
+import "./m_query.css";
+import "./body.css";
 import pic1 from "../images/pic1.png";
 import pic2 from "../images/pic2.png";
 import pic3 from "../images/pic3.png";
+import { Fragment } from "react";
 
 export default function Body() {
   var msg1 =
@@ -71,32 +73,18 @@ export default function Body() {
       <div id="middle-section" className="contacts">
         <div className="search_div">
           <div className="search">
-            <input type="text" className="search_bar" placeholder="Search..." />
+            <input
+              type="text"
+              className="search_bar"
+              placeholder="Search users, messages or chat id's"
+            />
             <i className="fas fa-search search_icon"></i>
           </div>
-          <div className="btn-group dropleft">
-            <button
-              id="filter_toggle"
-              type="button"
-              className="btn btn-secondary dropdown-toggle"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <i className="fas fa-filter"></i>
-            </button>
-            <div className="dropdown-menu dropdown-menu-right">
-              <button className="dropdown-item" type="button">
-                Action
-              </button>
-              <button className="dropdown-item" type="button">
-                Another action
-              </button>
-              <button className="dropdown-item" type="button">
-                Something else here
-              </button>
-            </div>
-          </div>
+          <Dropleft
+            id="filter_toggle"
+            icon={<i className="fas fa-sort-amount-down"></i>}
+            header="Filters"
+          />
         </div>
 
         <div className="conversations">
@@ -124,32 +112,30 @@ export default function Body() {
             <div style={{ fontWeight: "bold" }}>
               Inquiry about relocation from Nairobi
             </div>
-            <div className="btn-group dropleft">
-              <button
-                type="button"
-                className="btn btn-secondary dropdown-toggle hide-toggle contact_info"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <i className="fas fa-info"></i>
-                Contact Info
-              </button>
-
-              <div className="dropdown-menu dropdown-menu-right">
-                <button className="dropdown-item" type="button">
-                  Action
-                </button>
-                <button className="dropdown-item" type="button">
-                  Another action
-                </button>
-                <button className="dropdown-item" type="button">
-                  Something else here
-                </button>
-              </div>
-
-              <span className="material-icons">more_vert</span>
-            </div>
+            <Dropleft
+              id="contact_info"
+              header={
+                <Fragment>
+                  <i
+                    className="fas fa-info"
+                    style={{ color: "#ffbb00", marginRight: "8px" }}
+                  ></i>
+                  Contact info
+                </Fragment>
+              }
+              center
+              icon={
+                <Fragment>
+                  <i className="fas fa-info"></i>Contact info
+                </Fragment>
+              }
+              width="max-content"
+            />
+            <Dropleft
+              id="options"
+              icon={<i className="fas fa-ellipsis-v"></i>}
+              width="max-content"
+            />
           </header>
           <div className="chat_body">
             <div id="chat_id" className="chat_id">

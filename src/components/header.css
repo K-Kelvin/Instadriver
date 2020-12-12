@@ -1,5 +1,6 @@
 .Header {
   background-color: #fff;
+  position: relative;
 }
 .Header .top {
   display: flex;
@@ -25,12 +26,30 @@
 .driver {
   color: orange;
 }
-
+#btn_toggle_menu {
+  background-color: #3b3b3b;
+  color: #fff;
+  padding: 4px 8px;
+  margin: 0;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  position: absolute;
+  right: 12px;
+  top: 0;
+  display: none;
+  transform: translateY(50%);
+}
+#btn_toggle_menu:hover {
+  background-color: #000;
+  border-radius: 0;
+}
 #links {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
+  transition: all 0.6s ease-in-out;
 }
 #links li {
   margin-right: 36px;
@@ -56,21 +75,26 @@
 .hide-toggle::after {
   content: none;
 }
-
-@media (max-width: 768px) {
+.hide {
+  display: none;
+}
+/* Small screens */
+@media (max-width: 767px) {
   .Header .top {
     flex-direction: column;
     padding: 4px 0;
   }
+  #btn_toggle_menu {
+    display: block;
+  }
   .logo {
-    /* background-color: green; */
     margin: 0;
     width: 100%;
     margin-bottom: 14px;
   }
   #links {
     flex-direction: column;
-    /* background: orange; */
+    display: none;
   }
   #links li {
     margin: 0;
@@ -84,5 +108,10 @@
   #links .Menu {
     text-align: center;
     margin: 6px 0;
+  }
+}
+@media (min-width: 768px) {
+  #links {
+    display: flex;
   }
 }

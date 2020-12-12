@@ -13,6 +13,7 @@
   padding: 20px 0 20px 12px;
   font-family: "Rubik", sans-serif;
   font-size: 15px;
+  line-height: 25px;
   font-weight: 400;
   line-height: 22px;
 }
@@ -22,10 +23,12 @@
   font-size: 1rem;
 }
 .left-navbar ul li i {
-  margin-right: 8px;
+  margin-right: 10px;
+  margin-left: -4px;
+  font-size: 25px;
 }
 .left-navbar ul li:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 28px;
 }
 .left-navbar ul li a {
   text-decoration: none;
@@ -73,15 +76,19 @@
   border: 0;
   outline: none;
 }
-.search_div .fa-filter:hover {
-  color: #3b3b3b;
+.search_div .fa-filter:hover #filter_toggle {
+  background-color: #505050;
 }
 .search_bar {
-  padding: 3px 30px;
+  padding: 8px 4px 8px 40px;
   width: 300px;
-  border-radius: 100px;
+  border-radius: 30px;
   outline: none;
-  border: 0.5px solid #c4c4c4;
+  border: 0.5px solid #ffbb00;
+  font-size: 15px;
+}
+.search_bar:active {
+  border: 0.5px solid #b68601;
 }
 .search_icon {
   position: absolute;
@@ -100,7 +107,8 @@
 }
 .conversations {
   height: 600px;
-  border: 0.5px solid #c4c4c4;
+  border: none;
+  /* border: 0.5px solid #c4c4c4; */
   background-color: white;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -140,13 +148,6 @@
 #new_chat:hover {
   background-color: rgba(255, 165, 1, 0.75);
 }
-.profile_image {
-  position: absolute;
-  top: 0;
-  left: 10px;
-  z-index: 2;
-  transform: translateY(-52%);
-}
 .messages {
   clear: both;
   position: relative;
@@ -165,6 +166,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.profile_image {
+  position: absolute;
+  top: 0;
+  left: 14px;
+  z-index: 2;
+  transform: translateY(-52%);
 }
 .chat_body {
   position: relative;
@@ -209,16 +217,18 @@
 }
 p.name {
   font-weight: bold;
+  margin-bottom: -2px;
 }
 p {
   padding: 0;
   margin: 0;
 }
-.details {
-  margin-top: 18px;
+.chat_header .details {
+  margin-top: 28px;
+  margin-left: 14px;
   font-size: 12px;
 }
-.contact_info {
+#contact_info {
   background-color: #6b6565;
   border: 0.5px solid #ffbb00;
   border-radius: 5px;
@@ -227,7 +237,7 @@ p {
   text-align: center;
   padding: 4px;
 }
-.contact_info .fa-info {
+#contact_info .fa-info {
   color: #ffbb00;
   padding-right: 5px;
 }

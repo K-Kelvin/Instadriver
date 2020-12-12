@@ -26,9 +26,12 @@ p.name {
   clear: both;
   display: block;
   padding-left: 6px;
+  color: #000;
 }
 .Contact .right h2 {
-  font-size: 20px;
+  margin: 14px 0 10px 0;
+  font-size: 18px;
+  font-weight: bold;
 }
 .Contact .right p {
   font-size: 15px;
@@ -48,7 +51,7 @@ p.name {
   text-align: center;
   color: #6b6565;
   font-size: 10px;
-  padding-right: 2px;
+  padding: 2px 15px;
 }
 .unread {
   position: absolute;
