@@ -4,13 +4,13 @@ import logo from "../images/Instadriver.png";
 export default function Header() {
   return (
     <header className="Header">
-      <div className="top">
+      <div className="top container">
         <div className="logo">
           <img src={logo} alt="..." />
           Insta<span className="driver">driver</span>
         </div>
         <div className="right">
-          <ul className="links">
+          <ul className="links" id="links">
             <li>
               <a href="#jobs">Jobs</a>
             </li>
@@ -20,13 +20,13 @@ export default function Header() {
             <li className="active">
               <a href="#james">James Keem</a>
             </li>
+            <li className="Menu">
+              Menu <i className="fas fa-bars"></i>
+            </li>
           </ul>
-          <div className="Menu">
-            Menu <i className="fas fa-bars"></i>
-          </div>
         </div>
       </div>
-      <div className="bottom"></div>
+      <div className="header_bottom"></div>
     </header>
   );
 }

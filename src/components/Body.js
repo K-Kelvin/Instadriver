@@ -74,13 +74,33 @@ export default function Body() {
             <input type="text" className="search_bar" placeholder="Search..." />
             <i className="fas fa-search search_icon"></i>
           </div>
-          <button onClick={toggleMenu} id="filter">
-            <i className="fas fa-filter"></i>
-          </button>
+          <div className="btn-group dropleft">
+            <button
+              id="filter_toggle"
+              type="button"
+              className="btn btn-secondary dropdown-toggle"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i className="fas fa-filter"></i>
+            </button>
+            <div className="dropdown-menu dropdown-menu-right">
+              <button className="dropdown-item" type="button">
+                Action
+              </button>
+              <button className="dropdown-item" type="button">
+                Another action
+              </button>
+              <button className="dropdown-item" type="button">
+                Something else here
+              </button>
+            </div>
+          </div>
         </div>
 
         <div className="conversations">
-          <Contact image={pic1} unread="4" />
+          <Contact image={pic1} unread="4" current />
           <Contact image={pic2} unread="0" />
           <Contact image={pic3} unread="4" />
           <Contact image={pic1} unread="4" />
@@ -91,7 +111,7 @@ export default function Body() {
       </div>
 
       <div id="right-section" className="chat">
-        <button>
+        <button id="new_chat">
           <i className="fas fa-plus"></i> &nbsp; Start a new chat
         </button>
         <div className="messages">
@@ -102,13 +122,32 @@ export default function Body() {
               <p>@JohntheD</p>
             </div>
             <div style={{ fontWeight: "bold" }}>
-              Inquiry about relocation from Nairobi{" "}
+              Inquiry about relocation from Nairobi
             </div>
-            <div className="contact_info">
-              <i className="fas fa-info"></i>
-              Contact Info
-            </div>
-            <div>
+            <div className="btn-group dropleft">
+              <button
+                type="button"
+                className="btn btn-secondary dropdown-toggle hide-toggle contact_info"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i className="fas fa-info"></i>
+                Contact Info
+              </button>
+
+              <div className="dropdown-menu dropdown-menu-right">
+                <button className="dropdown-item" type="button">
+                  Action
+                </button>
+                <button className="dropdown-item" type="button">
+                  Another action
+                </button>
+                <button className="dropdown-item" type="button">
+                  Something else here
+                </button>
+              </div>
+
               <span className="material-icons">more_vert</span>
             </div>
           </header>
@@ -145,7 +184,4 @@ export default function Body() {
       </div>
     </div>
   );
-}
-function toggleMenu() {
-  console.log("clicked");
 }

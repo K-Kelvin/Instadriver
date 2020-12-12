@@ -7,17 +7,17 @@ export default function Message({
   read = false,
 }) {
   var style = {
-    bg: "#FCF2F7",
+    bg: "#ECF2FA",
     float: "left",
     borderRadius: "15px 15px 15px 0px",
     tick_color: "#c4c4c4",
   };
   if (sent) {
-    style.bg = "#ECF2FA";
+    style.bg = "#FCF2F7";
     style.float = "right";
     style.borderRadius = "15px 15px 0px 15px";
   }
-  if (read == true) {
+  if (read) {
     style.tick_color = "#ffbb00";
   }
   var ticks = (

@@ -70,6 +70,8 @@
   width: 28px;
   height: 28px;
   color: #3b3b3b;
+  border: 0;
+  outline: none;
 }
 .search_div .fa-filter:hover {
   color: #3b3b3b;
@@ -103,6 +105,21 @@
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
+#filter_toggle::after,
+#filter_toggle::before {
+  content: none;
+}
+#filter_toggle {
+  background-color: #3b3b3b;
+  padding: 0;
+  padding-top: 2px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+#filter_toggle i {
+  color: white;
+}
 
 /* right scrollable section*/
 .chat {
@@ -110,7 +127,7 @@
   width: 51%;
   min-height: 500px;
 }
-.chat button {
+#new_chat {
   border-radius: 8px;
   padding: 6px 8px;
   margin: 25px 24px 18px 0;
@@ -120,7 +137,7 @@
   background-color: orange;
   float: right;
 }
-.chat button:hover {
+#new_chat:hover {
   background-color: rgba(255, 165, 1, 0.75);
 }
 .profile_image {
@@ -141,7 +158,7 @@
 .chat_header {
   background-color: #e8f5f9;
   border-bottom: 1px solid #c4c4c4;
-  height: 60px;
+  height: 62px;
   border-radius: 12px 12px 0 0;
   padding: 6px;
   position: relative;
@@ -154,6 +171,7 @@
   padding: 20px;
   overflow-y: scroll;
   height: 500px;
+  padding-bottom: 100px;
   margin-bottom: 100px;
 }
 #chat_id {

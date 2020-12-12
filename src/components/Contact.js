@@ -7,14 +7,21 @@ export default function Contact({
   username = "@JohntheD",
   time = "11:00 a.m",
   unread = 4,
+  current,
 }) {
-  var colors = { bg: "#F9F8F8", time: "#C4C4C4" };
+  var colors = { bg: "#F9F8F8", time: "#C4C4C4", bd_color: "#C4C4C4" };
   if (unread > 0) {
     colors.bg = "#E8F5F9";
     colors.time = "#279F2C";
   }
+  if (current) {
+    colors.bd_color = "orange";
+  }
   return (
-    <div className="Contact" style={{ backgroundColor: colors.bg }}>
+    <div
+      className="Contact"
+      style={{ backgroundColor: colors.bg, borderColor: colors.bd_color }}
+    >
       <div className="left">
         <img src={image} alt="..." />
         <p className="name">{name}</p>

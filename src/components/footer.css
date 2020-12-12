@@ -1,6 +1,26 @@
-footer {
-  width: 100%;
-  display: flex;
-  background: gray url("../images/footer.png") no-repeat 100% 100%;
-  height: 400px;
+#page_footer {
+  /* text-align: center; */
+  color: #fff;
+  background-image: url(../images/footer.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: auto;
+  padding-top: 58px;
+  padding-bottom: 40px;
+}
+#page_footer .links {
+  color: #c7c6bf;
+  font-family: Rubik;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 100;
+  text-decoration: none;
+}
+#social_m {
+  padding-left: 0;
+}
+#page_footer .col-md-3 {
+  margin-bottom: 10px;
 }
