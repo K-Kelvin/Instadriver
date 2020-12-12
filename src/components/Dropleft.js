@@ -9,13 +9,34 @@ export default function Dropleft({ id, icon, header, center, width }) {
   if (id === "filter_toggle") {
     mid_component = (
       <Fragment>
-        <button className="message" type="button">
-          Time of messages
-          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        <button className="message test" type="button">
+          <a className="second_dropdown_toggle" href="#click">
+            Message statuses
+            <i className="fa fa-angle-down" aria-hidden="true"></i>
+          </a>
+          <div className="second_dropdown drop_left">
+            <button className="btn btn-danger-sm">Read messages</button>
+            <button className="btn btn-danger-sm">Unread messages</button>
+            <button className="btn btn-danger-sm">
+              Opened but not responded
+            </button>
+            <button className="btn btn-danger-sm">Ongoing discussion</button>
+            <button className="btn btn-danger-sm">Ended discussion</button>
+          </div>
         </button>
-        <button className="message" type="button">
-          Time of messages
-          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        <button className="message test" type="button">
+          <a className="second_dropdown_toggle" href="#click">
+            Message statuses
+            <i className="fa fa-angle-down" aria-hidden="true"></i>
+          </a>
+          <div className="second_dropdown drop_left">
+            <button className="btn btn-danger-sm">Last hour</button>
+            <button className="btn btn-danger-sm">12 hrs ago</button>
+            <button className="btn btn-danger-sm">Today</button>
+            <button className="btn btn-danger-sm">This week</button>
+            <button className="btn btn-danger-sm">This month</button>
+            <button className="btn btn-danger-sm">This year</button>
+          </div>
         </button>
         <button id="apply_filters" type="button">
           Apply filters

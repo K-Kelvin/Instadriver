@@ -7,6 +7,7 @@ import pic1 from "../images/pic1.png";
 import pic2 from "../images/pic2.png";
 import pic3 from "../images/pic3.png";
 import { Fragment } from "react";
+// import FilterMultiDropDown from "./FilterMultiDropdown";
 
 export default function Body() {
   var msg1 =
@@ -22,6 +23,14 @@ export default function Body() {
             <a href="#emp">
               <i className="far fa-user"></i>
               Employer Profile
+              <i
+                className="fa fa-angle-down"
+                style={{
+                  marginLeft: "8px",
+                  transform: "translateY(15%)",
+                  fontSize: "15px",
+                }}
+              ></i>
             </a>
           </li>
           <li>
@@ -85,6 +94,7 @@ export default function Body() {
             icon={<i className="fas fa-sort-amount-down"></i>}
             header="Filters"
           />
+          {/* <FilterMultiDropDown /> */}
         </div>
 
         <div className="conversations">

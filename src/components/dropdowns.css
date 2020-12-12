@@ -22,8 +22,39 @@
 .drop_left .drop_body {
   padding: 36px;
 }
+.test {
+  position: relative;
+}
 
 /* left */
+button.message.test {
+  padding: 0;
+}
+a.second_dropdown_toggle {
+  background-color: transparent;
+  color: inherit;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  width: 100%;
+}
+.second_dropdown {
+  position: absolute;
+  right: 26%;
+  top: 10px;
+  width: max-content;
+  min-width: 186px;
+  z-index: 10;
+  padding: 6px;
+  display: none;
+  transition: 0.3s ease-in-out;
+}
+.second_dropdown > button {
+  display: block;
+}
+
 .drop_left .message {
   background: #ffffff;
   border: 0.5px solid #c4c4c4;

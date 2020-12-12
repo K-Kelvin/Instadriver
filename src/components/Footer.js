@@ -58,11 +58,8 @@ export default function Footer() {
           </div>
           <div className="col-md-3 col-sm-6 text-left spacing">
             <h4 className="service-heading text-left">Social Media</h4>
-            {/* <a className="links" href="#"></a> */}
             <ul id="social_m">
-              {/* <a className="links" href="#"></a> */}
               <li className="list-inline-item">
-                {/* <a className="links" href="#"></a> */}
                 <a href="#a">
                   <img
                     src="https://www.instadriver.co/img/facebook.svg"

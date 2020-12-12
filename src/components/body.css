@@ -10,7 +10,7 @@
   height: max-content;
 }
 .left-navbar ul {
-  padding: 20px 0 20px 12px;
+  padding: 20px 4px 20px 12px;
   font-family: "Rubik", sans-serif;
   font-size: 15px;
   line-height: 25px;
@@ -21,6 +21,7 @@
   list-style: none;
   border-radius: 8px;
   font-size: 1rem;
+  margin: 0;
 }
 .left-navbar ul li i {
   margin-right: 10px;
@@ -28,12 +29,13 @@
   font-size: 25px;
 }
 .left-navbar ul li:not(:last-child) {
-  margin-bottom: 28px;
+  margin-bottom: 8px;
 }
 .left-navbar ul li a {
   text-decoration: none;
   color: white;
   padding: 8px 8px;
+  display: block;
   width: 100%;
   border-radius: 5px;
 }
@@ -51,7 +53,7 @@
   width: 16px;
   height: 16px;
   border-radius: 1000px;
-  margin-left: 8px;
+  margin-left: 14px;
 }
 
 /* middle scrollable section */
