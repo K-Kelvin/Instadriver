@@ -92,6 +92,11 @@
 .search_bar:active {
   border: 0.5px solid #b68601;
 }
+@media (max-width: 576px) {
+  .search_bar {
+    width: 295px;
+  }
+}
 .search_icon {
   position: absolute;
   left: 8px;

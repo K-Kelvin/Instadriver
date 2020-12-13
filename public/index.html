@@ -59,12 +59,30 @@
     <script>
       $(document).ready(function () {
         $("a.second_dropdown_toggle").on("click", function (e) {
-          $("div.second_dropdown").hide();
-          console.log($(this).next("div.second_dropdown").toggle());
+          $(this).next("div.second_dropdown").toggle();
           e.stopPropagation();
           e.preventDefault();
         });
-        $("button.message.test").on("click", function (e) {
+        $(".btn-drop-2").on("click", function (e) {
+          $("div.second_dropdown").hide();
+          var selected = e.target.textContent;
+          e.target.parentElement.previousElementSibling.textContent = selected;
+          e.stopPropagation();
+          e.preventDefault();
+        });
+        $(".second_dropdown").on("click", function (e) {
+          e.stopPropagation();
+          e.preventDefault();
+        });
+        // $(".drop_body").on("click", function (e) {
+        //   $("div.second_dropdown").hide();
+        //   e.stopPropagation();
+        //   e.preventDefault();
+        // });
+        // $("#apply_filters").on("click", function (e) {
+        //   $(".dropdown-menu.dropdown-menu-right.drop_left").toggle();
+        // });
+        $("body").on("click", function (e) {
           $("div.second_dropdown").hide();
         });
       });

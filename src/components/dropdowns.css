@@ -54,7 +54,14 @@ a.second_dropdown_toggle {
 .second_dropdown > button {
   display: block;
 }
-
+.btn-drop-2:active {
+  outline: none;
+}
+@media (max-width: 576px) {
+  .second_dropdown > button {
+    font-size: 0.9em;
+  }
+}
 .drop_left .message {
   background: #ffffff;
   border: 0.5px solid #c4c4c4;
@@ -84,7 +91,13 @@ a.second_dropdown_toggle {
   border: none;
   color: #fff;
 }
-
+#apply_filters:hover {
+  background-color: #ebb113;
+  border-radius: 0;
+}
+#apply_filters:active {
+  background-color: #ffbb00;
+}
 /* middle */
 #contact_info + div + header {
   text-align: center;
