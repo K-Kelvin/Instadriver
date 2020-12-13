@@ -42,24 +42,25 @@ a.second_dropdown_toggle {
 }
 .second_dropdown {
   position: absolute;
-  right: 26%;
+  right: 36px; /* 26% */
   top: 10px;
   width: max-content;
   min-width: 186px;
   z-index: 10;
   padding: 6px;
   display: none;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.second_dropdown > a {
+.second_dropdown > * {
   display: block;
+  text-align: left;
 }
 .btn-drop-2:active {
   outline: none;
 }
 @media (max-width: 576px) {
-  .second_dropdown > button {
-    font-size: 0.9em;
+  .second_dropdown > * {
+    font-size: 0.95em;
   }
 }
 .drop_left .message {
@@ -74,8 +75,12 @@ a.second_dropdown_toggle {
   text-align: center;
   color: #bebdbd;
 }
-.fa-angle-down {
-  margin-left: 8px;
+.test .fa-angle-down {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 26px;
 }
 #apply_filters {
   background: #ffbb00;
