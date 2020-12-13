@@ -152,18 +152,16 @@ export default function Body() {
             <Message message={msg1} />
             <Message sent message={msg2} read={true} />
             <Message message={msg3} />
-            <Message message={msg1} />
+            <Message sent message={msg2} />
+            <Message sent message={msg1} />
             <Message message={msg2} />
             <Message sent message={msg2} />
-            <Message message={msg2} />
-            <Message message={msg2} />
+            <Message sent message={msg2} />
+            <Message message={msg1} />
           </div>
           <div className="chat_footer">
             <div className="type_message">
-              <textarea
-                placeholder="Type your message"
-                style={{ resize: "none" }}
-              />
+              <textarea placeholder="Type your message" />
               <div className="footer">
                 <span className="material-icons">attachment</span>
                 <span className="material-icons">sentiment_satisfied_alt</span>

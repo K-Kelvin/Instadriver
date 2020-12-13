@@ -1,6 +1,12 @@
 .Message {
   position: relative;
+  width: 100%;
   margin-bottom: 28px;
+}
+.wrapper {
+  position: relative;
+  max-width: 80%;
+  padding-bottom: 30px;
 }
 .message {
   color: #5b5b5b;
@@ -8,17 +14,20 @@
   line-height: 145%;
   border-radius: 15px 15px 0px 15px;
   border: none;
+  width: max-content;
+  max-width: 100%;
   padding: 8px 12px;
-  width: 90%;
-  clear: both;
   position: relative;
 }
-.message:first-child {
+.wrapper:first-child {
   margin-top: 16px;
 }
 .message_time {
   font-size: 15px;
   color: #c4c4c4;
+  display: block;
+  position: absolute;
+  bottom: 0;
 }
 .message_time .ticks {
   display: inline-block;

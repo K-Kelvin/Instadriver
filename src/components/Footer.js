@@ -5,14 +5,14 @@ export default function Footer() {
     <section className="footer" id="page_footer">
       <div className="container">
         <div className="row">
-          <div className="col-lg-12 text-center">
+          <div className="col-lg-12 text-center mb-2">
             <img
               style={{ marginBottom: 30 }}
               src="https://www.instadriver.co/img/footerlogo.svg"
               alt="..."
             />
           </div>
-          <div className="col-md-3 col-sm-6 text-left spacing">
+          <div className="col-md-3 col-sm-6 text-left spacing mb-4">
             <h4 className="service-heading text-left">Useful links</h4>
             <a className="links" href="#a">
               About InstaDriver
@@ -26,7 +26,7 @@ export default function Footer() {
               Top Ad Feature (For Drivers)
             </a>
           </div>
-          <div className="col-md-2 col-sm-6 text-left spacing">
+          <div className="col-md-2 col-sm-6 text-left spacing mb-4">
             <h4 className="service-heading text-left">Useful links</h4>
             <a className="links" href="#a">
               Driver Sign In
@@ -42,7 +42,7 @@ export default function Footer() {
               Employer Sign up
             </a>
           </div>
-          <div className="col-md-2 col-sm-6 text-left spacing">
+          <div className="col-md-2 col-sm-6 text-left spacing mb-4">
             <h4 className="service-heading text-left">Useful links</h4>
             <a className="links" href="#a">
               FAQs
@@ -56,7 +56,7 @@ export default function Footer() {
               Terms &amp; Conditions
             </a>
           </div>
-          <div className="col-md-3 col-sm-6 text-left spacing">
+          <div className="col-md-3 col-sm-6 text-left spacing mb-4">
             <h4 className="service-heading text-left">Social Media</h4>
             <ul id="social_m">
               <li className="list-inline-item">
