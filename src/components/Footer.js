@@ -35,12 +35,6 @@ export default function Footer() {
             <a className="links" href="#a">
               Driver Sign Up
             </a>
-            <a className="links" href="#a">
-              Employer Sign in
-            </a>
-            <a className="links" href="#a">
-              Employer Sign up
-            </a>
           </div>
           <div className="col-md-2 col-sm-6 text-left spacing mb-4">
             <h4 className="service-heading text-left">Useful links</h4>
@@ -76,7 +70,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="#a" target="_blank">
+                <a href="#a">
                   <img
                     src="https://www.instadriver.co/img/youtube.svg"
                     alt="..."
