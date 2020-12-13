@@ -51,7 +51,7 @@ a.second_dropdown_toggle {
   display: none;
   transition: 0.3s ease-in-out;
 }
-.second_dropdown > button {
+.second_dropdown > a {
   display: block;
 }
 .btn-drop-2:active {

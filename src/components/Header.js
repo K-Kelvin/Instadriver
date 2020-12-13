@@ -26,7 +26,7 @@ export default function Header() {
             <li className="Menu dropdown">
               <a
                 className="nav-link dropdown-toggle hide-toggle"
-                href="#"
+                href="#a"
                 id="navbarDropdown"
                 role="button"
                 data-toggle="dropdown"
@@ -40,13 +40,13 @@ export default function Header() {
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdown"
               >
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="#a">
                   Action
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="#a">
                   Another action
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="#a">
                   Something else here
                 </a>
               </div>
@@ -59,12 +59,12 @@ export default function Header() {
   );
 }
 
-function toggleMenu() {
-  var links_ul = document.getElementById("links");
-  if (links_ul.classList.contains("hide-em")) {
-    links_ul.style.display = "none";
-  } else {
-    links_ul.style.display = "flex";
-  }
-  links_ul.classList.toggle("hide-em");
-}
+// function toggleMenu() {
+//   var links_ul = document.getElementById("links");
+//   if (links_ul.classList.contains("hide-em")) {
+//     links_ul.style.display = "none";
+//   } else {
+//     links_ul.style.display = "flex";
+//   }
+//   links_ul.classList.toggle("hide-em");
+// }

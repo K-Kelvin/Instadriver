@@ -15,11 +15,21 @@ export default function Dropleft({ id, icon, header, center, width }) {
             <i className="fa fa-angle-down" aria-hidden="true"></i>
           </a>
           <div className="second_dropdown drop_left">
-            <button className="btn btn-drop-2">Read messages</button>
-            <button className="btn btn-drop-2">Unread messages</button>
-            <button className="btn btn-drop-2">Opened but not responded</button>
-            <button className="btn btn-drop-2">Ongoing discussion</button>
-            <button className="btn btn-drop-2">Ended discussion</button>
+            <a className="btn btn-drop-2" href="#a">
+              Read messages
+            </a>
+            <a className="btn btn-drop-2" href="#a">
+              Unread messages
+            </a>
+            <a className="btn btn-drop-2" href="#a">
+              Opened but not responded
+            </a>
+            <a className="btn btn-drop-2" href="#a">
+              Ongoing discussion
+            </a>
+            <a className="btn btn-drop-2" href="#a">
+              Ended discussion
+            </a>
           </div>
         </button>
         <button className="message test" type="button">
@@ -28,12 +38,24 @@ export default function Dropleft({ id, icon, header, center, width }) {
             <i className="fa fa-angle-down" aria-hidden="true"></i>
           </a>
           <div className="second_dropdown drop_left">
-            <button className="btn btn-drop-2">Last hour</button>
-            <button className="btn btn-drop-2">12 hrs ago</button>
-            <button className="btn btn-drop-2">Today</button>
-            <button className="btn btn-drop-2">This week</button>
-            <button className="btn btn-drop-2">This month</button>
-            <button className="btn btn-drop-2">This year</button>
+            <a className="btn btn-drop-2" href="#a">
+              Last hour
+            </a>
+            <a className="btn btn-drop-2" href="#a">
+              12 hrs ago
+            </a>
+            <a className="btn btn-drop-2" href="#a">
+              Today
+            </a>
+            <a className="btn btn-drop-2" href="#a">
+              This week
+            </a>
+            <a className="btn btn-drop-2" href="#a">
+              This month
+            </a>
+            <a className="btn btn-drop-2" href="#a">
+              This year
+            </a>
           </div>
         </button>
         <button id="apply_filters" type="button">

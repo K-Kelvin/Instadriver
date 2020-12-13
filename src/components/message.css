@@ -3,8 +3,9 @@
   margin-bottom: 28px;
 }
 .message {
-  color: black;
+  color: #5b5b5b;
   font-size: 15px;
+  line-height: 145%;
   border-radius: 15px 15px 0px 15px;
   border: none;
   padding: 8px 12px;
@@ -17,4 +18,9 @@
 }
 .message_time {
   font-size: 15px;
+  color: #c4c4c4;
+}
+.message_time .ticks {
+  display: inline-block;
+  transform: translateY(4px);
 }
