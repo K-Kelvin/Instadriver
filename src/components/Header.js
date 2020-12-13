@@ -23,8 +23,33 @@ export default function Header() {
             <li className="active">
               <a href="#james">James Keem</a>
             </li>
-            <li className="Menu">
-              Menu <i className="fas fa-bars"></i>
+            <li className="Menu dropdown">
+              <a
+                className="nav-link dropdown-toggle hide-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Menu <i className="fas fa-bars"></i>
+              </a>
+              <div
+                id="navbarDropdownMenu"
+                className="dropdown-menu"
+                aria-labelledby="navbarDropdown"
+              >
+                <a className="dropdown-item" href="#">
+                  Action
+                </a>
+                <a className="dropdown-item" href="#">
+                  Another action
+                </a>
+                <a className="dropdown-item" href="#">
+                  Something else here
+                </a>
+              </div>
             </li>
           </ul>
         </div>
