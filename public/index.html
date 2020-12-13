@@ -85,6 +85,17 @@
         $("body").on("click", function (e) {
           $("div.second_dropdown").hide();
         });
+
+        $("#btn_toggle_menu").on("click", function (e) {
+          $("#links").toggle();
+        });
+        function handleResize() {
+          var window_size = window.matchMedia("(min-width: 768px)");
+          if (window_size.matches) {
+            document.getElementById("links").style.display = "flex";
+          }
+        }
+        window.onresize = handleResize;
       });
     </script>
   </body>

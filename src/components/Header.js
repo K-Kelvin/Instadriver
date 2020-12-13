@@ -9,7 +9,7 @@ export default function Header() {
           <img src={logo} alt="..." />
           Insta<span className="driver">driver</span>
         </div>
-        <button id="btn_toggle_menu" onClick={toggleMenu}>
+        <button id="btn_toggle_menu">
           Menu <i className="fas fa-bars"></i>
         </button>
         <div className="right">
