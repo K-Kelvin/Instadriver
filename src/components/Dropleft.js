@@ -77,7 +77,9 @@ export default function Dropleft({ id, icon, header, center, width }) {
   } else if (id === "options") {
     mid_component = (
       <Fragment>
-        <button className="close">Close chat</button>
+        <button id="close_chat" className="close">
+          Close chat
+        </button>
         <button className="close">Delete chat</button>
       </Fragment>
     );

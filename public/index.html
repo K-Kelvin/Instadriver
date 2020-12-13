@@ -56,6 +56,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+
     <script>
       $(document).ready(function () {
         $("a.second_dropdown_toggle").on("click", function (e) {
@@ -94,11 +95,31 @@
           var nav = document.getElementById("links");
           if (window_size.matches) {
             nav.style.display = "flex";
+            $("#right-section").show();
           } else {
             nav.style.display = "none";
           }
         }
         window.onresize = handleResize;
+
+        $(".Contact").on("click", function (e) {
+          if (window.matchMedia("(max-width: 768px)").matches) {
+            $("#middle-section").fadeOut();
+            $("#right-section").show(300);
+          }
+        });
+        $("#back_button").on("click", function (e) {
+          if (window.matchMedia("(max-width: 768px)").matches) {
+            $("#right-section").fadeOut();
+            $("#middle-section").show(200);
+          }
+        });
+        $("#close_chat").on("click", function (e) {
+          if (window.matchMedia("(max-width: 768px)").matches) {
+            $("#right-section").fadeOut();
+            $("#middle-section").show(200);
+          }
+        });
       });
     </script>
   </body>

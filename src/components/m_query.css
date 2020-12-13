@@ -1,3 +1,19 @@
+#back_button {
+  display: none;
+  padding: 0 16px;
+  margin-top: 18px;
+  margin-left: 14px;
+  border: none;
+  outline: none;
+  color: #3b3b3b;
+}
+#back_button:hover {
+  color: rgb(0, 0, 0);
+}
+#back_button .fa-arrow-left {
+  font-size: 1.5em;
+}
+
 @media (max-width: 768px) {
   .Body {
     display: block;
@@ -9,11 +25,18 @@
   #middle-section {
     width: 100%;
   }
-  #right-section,
-  #right-section > * {
+  #right-section {
     display: none;
+    width: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
   }
-
+  #back_button {
+    display: inline-block;
+  }
+  #right-section > * {
+    margin-right: 0;
+  }
   #middle-section {
     margin: 0;
   }

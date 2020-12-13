@@ -107,6 +107,9 @@ export default function Body() {
       </div>
 
       <div id="right-section" className="chat">
+        <button id="back_button">
+          <i className="fa fa-arrow-left"></i>
+        </button>
         <button id="new_chat">
           <i className="fas fa-plus"></i> &nbsp; Start a new chat
         </button>

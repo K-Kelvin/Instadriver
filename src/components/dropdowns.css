@@ -39,6 +39,7 @@ a.second_dropdown_toggle {
   padding: 10px 20px;
   display: block;
   width: 100%;
+  min-width: 186px;
 }
 .second_dropdown {
   position: absolute;
@@ -75,7 +76,7 @@ a.second_dropdown_toggle {
   text-align: center;
   color: #bebdbd;
 }
-.test .fa-angle-down {
+.second_dropdown_toggle .fa-angle-down {
   position: absolute;
   right: 15px;
   top: 50%;
