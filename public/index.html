@@ -112,6 +112,7 @@
           if (window.matchMedia("(max-width: 768px)").matches) {
             $("#right-section").fadeOut();
             $("#middle-section").show(200);
+            document.getElementById("middle-section").style.width = "51%";
           }
         });
         $("#close_chat").on("click", function (e) {

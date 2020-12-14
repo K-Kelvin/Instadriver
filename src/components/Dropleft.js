@@ -4,7 +4,7 @@ import { Fragment } from "react";
 export default function Dropleft({ id, icon, header, center, width }) {
   var top_component, mid_component;
   if (header) {
-    top_component = <header>{header}</header>;
+    top_component = <header className={id}>{header}</header>;
   }
   if (id === "filter_toggle") {
     mid_component = (

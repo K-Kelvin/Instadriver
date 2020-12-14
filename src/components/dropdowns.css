@@ -105,8 +105,24 @@ a.second_dropdown_toggle {
   background-color: #ffbb00;
 }
 /* middle */
-#contact_info + div + header {
+.contact_info {
   text-align: center;
+}
+@media (max-width: 576px) {
+  /* .btn-group.dropleft {
+    position: unset;
+  } */
+  #contact_info + .dropdown-menu-right {
+    position: relative;
+    font-size: 0.95rem;
+    margin-top: 20px;
+    margin-left: -110px;
+    left: -300px;
+  }
+  #contact_info + .dropdown-menu-right > * {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .mobile_number {
   margin-bottom: 36px;

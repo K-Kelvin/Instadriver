@@ -120,7 +120,7 @@ export default function Body() {
               <p className="name">Shirly Cook</p>
               <p>@JohntheD</p>
             </div>
-            <div style={{ fontWeight: "bold" }}>
+            <div className="chat_title">
               Inquiry about relocation from Nairobi
             </div>
             <Dropleft
