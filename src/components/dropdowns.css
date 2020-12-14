@@ -109,14 +109,14 @@ a.second_dropdown_toggle {
   text-align: center;
 }
 @media (max-width: 576px) {
-  /* .btn-group.dropleft {
+  .btn-group.dropleft {
     position: unset;
-  } */
+  }
   #contact_info + .dropdown-menu-right {
     position: relative;
     font-size: 0.95rem;
-    margin-top: 20px;
-    margin-left: -110px;
+    margin-top: 40px;
+    margin-left: 30px;
     left: -300px;
   }
   #contact_info + .dropdown-menu-right > * {
@@ -137,6 +137,12 @@ a.second_dropdown_toggle {
   font-weight: bold;
   border-radius: 5px;
   margin-left: 26px;
+}
+@media (max-width: 576px) {
+  .mobile_number span,
+  .email_address span {
+    margin-left: 16px;
+  }
 }
 .mobile_number span {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

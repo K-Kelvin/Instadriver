@@ -28,11 +28,29 @@
   #right-section {
     display: none;
     width: 100%;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   #back_button {
     display: inline-block;
+    background: none;
+  }
+  #new_chat {
+    font-size: 1rem;
+  }
+  span.hide {
+    display: none;
+  }
+  .chat_footer {
+    padding: 2px;
+    padding-top: 10px;
+  }
+  div.type_message {
+    width: 100%;
+    margin: 0;
+  }
+  div.type_message textarea {
+    padding: 10px 10px;
   }
   #right-section > * {
     margin-right: 0;

@@ -1,8 +1,8 @@
 import Dropleft from "./Dropleft";
 import Contact from "./Contact";
 import Message from "./Message";
-import "./m_query.css";
 import "./body.css";
+import "./m_query.css";
 import pic1 from "../images/pic1.png";
 import pic2 from "../images/pic2.png";
 import pic3 from "../images/pic3.png";
@@ -129,7 +129,10 @@ export default function Body() {
                 <Fragment>
                   <i
                     className="fas fa-info"
-                    style={{ color: "#ffbb00", marginRight: "8px" }}
+                    style={{
+                      color: "#ffbb00",
+                      marginRight: "8px",
+                    }}
                   ></i>
                   Contact info
                 </Fragment>
@@ -137,7 +140,8 @@ export default function Body() {
               center
               icon={
                 <Fragment>
-                  <i className="fas fa-info"></i>Contact info
+                  <i className="fas fa-info" style={{ marginLeft: 4 }}></i>
+                  <span className="hide">Contact info</span>
                 </Fragment>
               }
               width="max-content"
