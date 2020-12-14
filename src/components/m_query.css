@@ -13,7 +13,14 @@
 #back_button .fa-arrow-left {
   font-size: 1.5em;
 }
-
+.hide {
+  display: inline;
+}
+@media (max-width: 576px) {
+  span.hide {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .Body {
     display: block;
@@ -37,9 +44,6 @@
   }
   #new_chat {
     font-size: 1rem;
-  }
-  span.hide {
-    display: none;
   }
   .chat_footer {
     padding: 2px;
