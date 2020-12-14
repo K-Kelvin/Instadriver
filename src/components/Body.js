@@ -111,7 +111,7 @@ export default function Body() {
           <i className="fa fa-arrow-left"></i>
         </button>
         <button id="new_chat">
-          <i className="fas fa-plus"></i> &nbsp; Start a new chat
+          <i className="fas fa-plus"></i>Start a new chat
         </button>
         <div className="messages">
           <img src={pic1} className="profile_image" alt="..." />

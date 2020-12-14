@@ -1,8 +1,8 @@
 #back_button {
   display: none;
   padding: 0 16px;
-  margin-top: 18px;
-  margin-left: 14px;
+  margin-top: 10px;
+  margin-left: 0px;
   border: none;
   outline: none;
   color: #3b3b3b;
@@ -44,6 +44,11 @@
   }
   #new_chat {
     font-size: 1rem;
+    transform: translateX(-4px);
+  }
+  #new_chat i {
+    display: inline-block;
+    margin-right: 6px;
   }
   .chat_footer {
     padding: 2px;
